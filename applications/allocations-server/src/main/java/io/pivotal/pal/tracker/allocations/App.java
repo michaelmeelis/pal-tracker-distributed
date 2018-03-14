@@ -25,5 +25,6 @@ public class App {
         @Value("${registration.server.endpoint}") String registrationEndpoint
     ) {
         return new ProjectClient(restOperations, registrationEndpoint);
+        
     }
 }
