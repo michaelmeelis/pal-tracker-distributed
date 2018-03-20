@@ -1,4 +1,4 @@
-package io.pivotal.pal.tracker.timesheets;
+package io.pivotal.pal.tracker.restsupport;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
