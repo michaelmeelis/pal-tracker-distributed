@@ -2,7 +2,12 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   host: registration-pal-mm
-  memory: 1G
+  memory: 500M
   instances: 1
+  env:
+    JAVA_OPTS: -Xmx128M
   services:
   - tracker-registration-database
+  - tracker-service-regist
+  - tracker-circuit-breaker-dashboard
+  - tracker-amqp
