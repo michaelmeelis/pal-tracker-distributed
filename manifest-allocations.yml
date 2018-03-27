@@ -7,10 +7,9 @@ applications:
   env:
     JAVA_OPTS: -Xmx128M
     GRANT_TYPE: client_credentials
-    SECURITY_USER_NAME: actuator
-    SECURITY_USER_PASSWORD: operations4red
   services:
   - tracker-allocations-database
   - tracker-service-regist
   - tracker-circuit-breaker-dashboard
   - tracker-amqp
+  - tracker-config-server
